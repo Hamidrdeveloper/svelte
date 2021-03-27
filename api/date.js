@@ -4,7 +4,7 @@ module.exports = (req, res) => {
       title: "Beshno ",
       path: 'http://dlrapfdarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
       artist: "BahramNori",
-      type: 'JioSaavn',},{nid: 5,
+      type: 'JioSaavn',},{nid: 7,
       cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
       title: "Beshno ",
       path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
