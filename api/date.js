@@ -6,23 +6,5 @@ module.exports = (req, res) => {
       path: 'https://svelte-q3mtqdyo1-hamidrdeveloper.vercel.app/api/date',
       artist: "BahramNori",
       type: 'JioSaavn',}
-  res.format ({
-   'text/plain': function() {
-      res.send('hey');
-   },
-
-   'text/html': function() {
-      res.send('hey'); 
-   },
-
-   'application/json': function() {
-      res.send({ message: date });
-   },
-
-   'default': function() {
-      // log the request and respond with 406
-      res.status(406).send('Not Acceptable');
-   }
-});
-//   res.status(200).send({ data:{date} })
+  res.status(200).json({ date })
 };
