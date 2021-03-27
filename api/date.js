@@ -6,5 +6,5 @@ module.exports = (req, res) => {
       path: 'https://svelte-q3mtqdyo1-hamidrdeveloper.vercel.app/api/date',
       artist: "Bahram ",
       type: 'JioSaavn',}
-  res.status(200).send(date);
+  res.status(200).send('data');
 };
