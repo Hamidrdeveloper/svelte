@@ -1,28 +1,40 @@
 module.exports = (req, res) => {
-  var date = {  
-      nid: 5,
+  var date = [{nid: 6,
+      cover: 'httpds://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfdarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},{nid: 5,
       cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
       title: "Beshno ",
-      path: 'https://svelte-q3mtqdyo1-hamidrdeveloper.vercel.app/api/date',
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
       artist: "BahramNori",
-      type: 'JioSaavn',}
-  res.format ({
-   'text/plain': function() {
-      res.send('hey');
-   },
-
-   'text/html': function() {
-      res.send('hey'); 
-   },
-
-   'application/json': function() {
-      res.send({ message: date });
-   },
-
-   'default': function() {
-      // log the request and respond with 406
-      res.status(406).send('Not Acceptable');
-   }
-});
-//   res.status(200).send({ data:{date} })
+      type: 'JioSaavn',},{nid: 5,
+      cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},{nid: 5,
+      cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},{nid: 5,
+      cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},{nid: 5,
+      cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},{nid: 5,
+      cover: 'https://myrapfarsi.com/wp-content/uploads/2021/03/Bahram%20-%20Beshno.jpg',
+      title: "Beshno ",
+      path: 'http://dlrapfarsi.ir/Mp3/1399/Bahram/Bahram%20-%20Beshno.mp3',
+      artist: "BahramNori",
+      type: 'JioSaavn',},
+              ]
+  res.status(200).json({ date })
 };
